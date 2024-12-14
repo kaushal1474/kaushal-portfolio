@@ -1,9 +1,3 @@
 {
-    "builds": [
-      {
-        "src": "out/**",
-        "use": "@vercel/static"
-      }
-    ]
-  }
-  
+  "outputDirectory": "out"
+}
