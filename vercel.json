@@ -1,3 +1,16 @@
 {
-  "outputDirectory": "out"
-}
+    "builds": [
+      {
+        "src": "out/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "outputDirectory": "out",
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
+    ]
+  }
+  
