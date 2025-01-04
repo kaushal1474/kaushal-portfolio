@@ -1,8 +1,5 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+
 import github from "./github.png";
 import link from "./external-link.png";
 import menu from "./menu.svg";
@@ -20,10 +17,6 @@ import lynit from "./lynit.webp";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
