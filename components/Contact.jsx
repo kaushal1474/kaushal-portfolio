@@ -55,7 +55,8 @@ const Contact = () => {
       }));
       error = true;
     }
-    if (!form.message.value.trim().length < 10) {
+
+    if (form.message.value.trim().length < 10) {
       setForm((prev) => ({
         ...prev,
         message: { ...prev["message"], error: true },
@@ -70,11 +71,11 @@ const Contact = () => {
         "service_ogiikmk",
         "template_yq11m4u",
         {
-          from_name: form.name,
+          from_name: form.name.value,
           to_name: "Kaushal",
-          from_email: form.email,
+          from_email: form.email.value,
           to_email: "kaushalchaunah1474@gmail.com",
-          message: form.message,
+          message: form.message.value,
         },
         emailjsSecret || ""
       )

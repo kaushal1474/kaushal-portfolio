@@ -1,30 +1,43 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import { styles } from "@/styles";
 import { ComputersCanvas } from "./canvas";
 
-
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen md:min-h-[767px] mx-auto">
-      <div className={`${styles.paddingX} absolute inset-0 top-[100px] md:top-[120px] max-w-7xl flex flex-row mx-auto items-start gap-5`}>
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 h-40 sm:h-80 violet-gradient" />
-        </div>
-        <div>
-          <h1 className={styles.heroHeadText + " text-white"}>
+    <section className="relative w-full z-20 h-screen mx-auto">
+      <div className="relative md:min-h-[767px] max-w-7xl mx-auto sm:px-16 px-8 sm:py-16 py-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-10 items-center">
+        {/* <div
+          className={`${styles.paddingX} absolute -left-10 z-40 inset-0 max-w-7xl flex flex-row mx-auto items-start gap-5`}
+        >
+          <div className="flex flex-col justify-center items-center mt-5">
+            <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+            <div className="w-1 h-20 sm:h-80 violet-gradient" />
+          </div>
+        </div> */}
+        <div className="mt-10">
+          <h1 className={styles.heroHeadText + " text-white leading-tight"}>
             Hi, I&apos;m <span className="text-[#915eff]">Kaushal</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I developed High quality web applications 
-            <br className="hidden md:block" />
-            with responsive User Interaface(UI).
+            I developed High quality web applications with responsive User
+            Interaface(UI).
           </p>
+          <div className="mt-6">
+            <button className="bg-primary hover:bg-transparent hover:text-primary rounded transition-colors">
+              <a
+                href="#work"
+                className="green-pink-gradient px-4 py-2 rounded font-semibold"
+              >
+                View My Work
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="w-screen md:w-full h-full min-h-[60vh] md:min-h-max -ml-8 md:mx-auto">
+          <ComputersCanvas />
         </div>
       </div>
-      <ComputersCanvas />
-
 
       <div className="absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center">
         <a href="#about">
@@ -34,7 +47,7 @@ const Hero = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop"
+                repeatType: "loop",
               }}
               className="w-4 h-3 rounded-full bg-secondary mb-1"
             />
@@ -42,7 +55,7 @@ const Hero = () => {
         </a>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

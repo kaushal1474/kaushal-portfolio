@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-50 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -42,7 +42,7 @@ const Navbar = () => {
           ))}
           <a
             className="green-pink-gradient py-2 px-0.5 rounded font-semibold"
-            href="https://drive.google.com/file/d/1tihMCpiacflLC2TSoydvFv6EZ5rnCUWC/view?usp=sharing"
+            href="https://drive.google.com/file/d/15eqMnz0I9fjDFjSw9cFy2AIpmQ_nE4sH/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className="flex md:hidden flex-1 justify-end items-center">
           <a
             className="green-pink-gradient py-1.5 px-0.5 rounded font-semibold"
-            href="https://drive.google.com/file/d/1tihMCpiacflLC2TSoydvFv6EZ5rnCUWC/view?usp=sharing"
+            href="https://drive.google.com/file/d/15eqMnz0I9fjDFjSw9cFy2AIpmQ_nE4sH/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
