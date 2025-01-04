@@ -24,14 +24,14 @@ const Hero = () => {
             Interaface(UI).
           </p>
           <div className="mt-6">
-            <button className="bg-primary hover:bg-transparent hover:text-primary rounded transition-colors">
-              <a
-                href="#work"
-                className="green-pink-gradient px-4 py-2 rounded font-semibold"
-              >
+            <a
+              href="#work"
+              className="green-pink-gradient px-0.5 py-2 rounded font-semibold"
+            >
+              <button className="bg-primary px-4 py-1.5 hover:bg-transparent hover:text-primary rounded transition-colors">
                 View My Work
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
         <div className="w-screen md:w-full h-full min-h-[60vh] md:min-h-max -ml-8 md:mx-auto">
@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-4 bottom-6 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
